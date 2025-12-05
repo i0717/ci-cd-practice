@@ -55,7 +55,7 @@ jobs:
       context: .
       push: true
       # 注意：镜像名称必须全部小写 
-      # 多标签配置：同时打 latest 和 Commit SHA 前7位标签
+      # 多标签配置：同时打 latest 和 Commit SHA
       tags: |
         ghcr.io/${{ github.repository_owner }}/ci-cd-practice:latest
         ghcr.io/${{ github.repository_owner }}/ci-cd-practice:${{ github.sha }}
